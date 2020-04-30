@@ -365,4 +365,8 @@ GO.ID                                        Term Annotated Significant Expected
 **Fig. 5.** Genes DE por efectos marginales y de interacción. 
 
 ![vennDiagram_Int](vennDiagram_Int.png)
-**Fig. 6.** Genes DE por efectos de interacción, divididos por tratamiento (izquierda) y genotipo (derecha) . 
+**Fig. 6.** Genes DE por efectos de interacción, divididos por tratamiento (izquierda) y genotipo (derecha). 
+
+### Discusión y Conclusiones 
+
+
