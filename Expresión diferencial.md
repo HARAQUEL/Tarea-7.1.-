@@ -24,7 +24,7 @@ Los datos se analizaron en el programa RStudio utilizando los comandos que se mu
 
 #### 1. Acciones preliminares
 * Descargar e instalar paqueterías disponibles en Bioconductor (http://www.bioconductor.org):
-```{r}
+```R
 library(org.Mm.eg.db)
 library(preprocessCore)
 library(maanova)
@@ -33,18 +33,18 @@ library(topGO)
 ```
 
 * Definir algunas constantes
-```{r}
+```R
 outdir     <- "output"
 fdr_th     <- 0.19 # Proporción de descubrimientos falsos que son aceptables 
 ```
 
 * Leer un archivo que define algunas funciones que son necesarias para el análisis.
-```{r}
+```R
 source("Rfxs.R")
 ```
 
 * Crear un directorio de salida
-```{r}
+```R
 if(!file.exists(outdir)) {
   dir.create(outdir, mode = "0755", recursive=T)
 }
@@ -52,20 +52,20 @@ if(!file.exists(outdir)) {
 #### 2. Lectura de sondas y aleatorización de datos
 
 * Cargar los datos crudos de las sondas y extraer aleatoriamente 5,000 filas. Leer los valores de la expresión del gen, se encuentran en la columna *CDR*. La columna *Detection.Pval* contiene valores *p* para la detección de transcritos, que se utilizarán para determinar si un gen se expresa.
-```{r}
+```R
 Data.Raw <- read.delim("C:/BIOINFORMATICA/DE_turotial2/GSE15354_raw.txt", header=TRUE)
 random_data <- Data.Raw[sample(nrow(Data.Raw), 5000), ]
 signal    <- grep("CDR", colnames(random_data)) # vector de columnas con datos 
 detection <- grep("Detection.Pval", colnames(random_data)) # vector de columnas con valores p
 ```
 * Importar las anotaciones de las sondas, y extraer las 5,000 anotaciones correspondientes a las 5,00 datos extraídos en el paso anterior.
-```{r}
+```R
 annot     <- read.delim("C:/BIOINFORMATICA/DE_turotial2/MouseRef-8_annot_full.txt")
 random_names <- rownames(random_data)
 annot = annot[row.names(annot)%in%random_names,]
 ```
 *No todas las sondas muestran la misma calidad al ser alineadas contra el genoma de referencia.*
-```{r}
+```R
 table(annot$ProbeQuality)
   Bad        Good     Good***    Good****    No match     Perfect  Perfect*** Perfect**** 
         285          97           2          28           0        4426          50         112 
@@ -345,4 +345,14 @@ GO.ID                                        Term Annotated Significant Expected
 
 ### Resultados
 
+![boxplot_random_probe_qc](boxplot_random_probe_qc.png)
 
+![boxplot_random_treatment](boxplot_random_treatment.png)
+
+![Pairs_scatter_log2](Pairs_scatter_log2.png)
+
+![P-values Hist](P-values Hist.png)
+
+![vennDiagram_DiffExprs](vennDiagram_DiffExprs.png)
+
+![vennDiagram_Int](vennDiagram_Int.png)
