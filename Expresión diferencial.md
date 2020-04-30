@@ -10,7 +10,7 @@ El análisis de la expresión de genes mediante la detección de transcriptos es
 La expresión diferencial es el cambio de los niveles de expresión de uno o más genes entre dos o varios condiciones.
 
 ### Objetivos
-El objetivo es evaluar el efecto de la variación genética en el cromosoma Y del ratón sobre el tamaño de los cardiomiocitos y la posible dependencia de tales efectos en niveles de testosterona, utilizando datos de perfiles de expresión génica en el tejido cardíaco de ratones. Particularmente, 1) determinar si existe expresión diferencial entre genotipos, 2) determinar si existe expresión diferencial entre tratamientos, y 3) evaluar las diferencias en la respuesta al tratamiento entre los dos genotipos, es decir, si existe una interacción entre los dos genotipos.
+Evaluar el efecto de la variación genética en el cromosoma Y del ratón sobre el tamaño de los cardiomiocitos y la posible dependencia de tales efectos en niveles de testosterona, utilizando datos de perfiles de expresión génica en el tejido cardíaco de ratones. Particularmente, 1) determinar si existe expresión diferencial entre genotipos, 2) determinar si existe expresión diferencial entre tratamientos, y 3) evaluar las diferencias en la respuesta al tratamiento entre los dos genotipos, es decir, si existe una interacción entre los dos genotipos.
 
 ### Materiales y métodos
 
@@ -73,7 +73,7 @@ table(annot$ProbeQuality)
 
 * Leer la tabla con el diseño de las hibridaciones. 
 ```R
- design <- read.csv("../data/YChrom_design.csv")
+ design <- read.csv("../data/YChrom_design.csv") ## El archivo .csv se encuentra en el directrorio DE_tutorial
  print(design)
 Array Sample_Name Sentrix_ID Sentrix_Position Genotype Treatment Group
 1      1  CDR017-DIL 4340571022                A        B         I   B.I
@@ -342,3 +342,7 @@ GO.ID                                        Term Annotated Significant Expected
   row.names=F)
 ```
 ###### Fin del tutorial
+
+### Resultados
+
+
