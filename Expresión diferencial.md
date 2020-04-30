@@ -354,7 +354,8 @@ Lo anterior se v reflejado en la **Figura 1** que muestra un gráfico de cajas q
 ![boxplot_random_probe_qc](boxplot_random_probe_qc.png)
  **Fig. 1.** Diagramas de caja de 5,000 sondas aleatorizadas en escala log por microarreglo y calidad de sonda. El ancho de las cajas es proporcional al número de sondas.
 
-En la **Figura 2** se muestran únicamente las sondas de buena calidad, coloreadas por tratamiento, castrado (E) intacto (I).
+
+En la **Figura 2** se muestran únicamente las sondas de buena calidad, coloreadas por tratamiento, castrado (C) intacto (I).
 
 ![boxplot_random_treatment](boxplot_random_treatment.png)
  
@@ -363,17 +364,25 @@ En la **Figura 2** se muestran únicamente las sondas de buena calidad, coloread
 ![Pairs_scatter_log2](Pairs_scatter_log2.png)
  **Fig. 3.** Diagramas de dispersión de 5,000 datos aleatorizados en escala log2.
 
+En la **Figura 4** muestra la distribución de _p_ tabulares y los valores de _p_ permutados para la prueba de F1, y los valores tabulares y permutados para Fs.
+
 ![P-values_Hist](P-values_Hist.png)
  **Fig. 4.** Densidad de la distribución de los valores de *p*. Ptab: tabular, Pvalperm: permutación, F1: prueba de *F* convencional, Fs: prueba de *F* con contracción de la varianza usando información de múltiples sondas. 
 
+
+Se encontró que la expresión de interacción de genes fue diferente en cuanto al tratamiento de la castración en los dos genotipo; hubo una mayor cantidad de genes expresados diferencialmente en cuanto al genotipo, seguido por el tratamiento, y hubo una cantidad menor cuando hubo una interacción de ambos (Fig. 5).
 
 ![vennDiagram_DiffExprs](vennDiagram_DiffExprs.png)
 
 **Fig. 5.** Genes DE por efectos marginales y de interacción. 
 
+
+Se obtuvieron 39 genes de expresión diferencial solo en ratones I, 18 genes de DE con ambos tratamientos (I y C), y 15 genes DE en los ratones castrados (C)(Fig.6, izquierda); mientras que se obtuvieron 46 genes DE en ratones con el genotipo C57BL/6J (B), 22 en la interacción C57BL/6J y C57BL/6J-chrY<A/J/NaJ> (B y BY), y 133 en lo ratones con genotipo C57BL/6J-chrY<A/J/NaJ> (BY) (Fig. 6, derecha).
+
 ![vennDiagram_Int](vennDiagram_Int.png)
 **Fig. 6.** Genes DE por efectos de interacción, divididos por tratamiento (izquierda) y genotipo (derecha). 
 
+
 ### Discusión y Conclusiones 
 
-
+En este trabajo se observó que hubo difrencias en la expresión diferencial entre los ratones evaluados con distintos genotipos, así como distintos tratamientos. El número de genes DE fue mayor en ratones con el genotipo GY. Este mismo patrón se observó en ratones que fueron castrados. El número de genes DE fue mayor en ratones castrados y que además poseen el genotipo BY, por lo que se concluye que sí existe una interacción entre el genotipo el tratamiento. 
