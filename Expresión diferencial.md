@@ -348,6 +348,7 @@ GO.ID                                        Term Annotated Significant Expected
 ![boxplot_random_probe_qc](boxplot_random_probe_qc.png)
  **Fig. 1.** Diagramas de caja de 5,000 datos aleatorizados en escala log por microarreglo y calidad de sonda. El ancho de las cajas es proporcional al número de sondas.
 
+
 ![boxplot_random_treatment](boxplot_random_treatment.png)
  **Fig. 2.** Diagramas de caja de 5,000 datos aleatorizados por microarreglo. Las cajas están coloreadas según tratamiento. 
 
@@ -356,6 +357,7 @@ GO.ID                                        Term Annotated Significant Expected
 
 ![P-values_Hist](P-values_Hist.png)
  **Fig. 4.** Densidad de la distribución de los valores de *p*. Ptab: tabular, Pvalperm: permutación, F1: prueba de *F* convencional, Fs: prueba de *F* con contracción de la varianza usando información de múltiples sondas. 
+
 
 ![vennDiagram_DiffExprs](vennDiagram_DiffExprs.png)
  **Fig. 5.** Genes DE por efectos marginales y de interacción. 
