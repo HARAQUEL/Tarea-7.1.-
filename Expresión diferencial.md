@@ -385,7 +385,7 @@ Se obtuvieron 39 genes de expresión diferencial solo en ratones I, 18 genes de 
 
 ### Discusión y Conclusiones 
 
-En este trabajo se observó que hubo difrencias en la expresión diferencial entre los ratones evaluados con distintos genotipos, así como distintos tratamientos. El número de genes DE fue mayor en ratones con el genotipo GY. Este mismo patrón se observó en ratones que fueron castrados. El número de genes DE fue mayor en ratones castrados y que además poseen el genotipo BY; aunque únicamente se evaluó el comportamiento de 5,000 sondas escogidas al azar, resultados similares se reportaron en el estudio realizado por Llamas _et al._ (20099 , por lo que se concluye que sí existe una interacción entre el genotipo el tratamiento. 
+En este trabajo se observó que hubo difrencias en la expresión diferencial entre los ratones evaluados con distintos genotipos, así como distintos tratamientos. El número de genes DE fue mayor en ratones con el genotipo GY. Este mismo patrón se observó en ratones que fueron castrados. El número de genes DE fue mayor en ratones castrados y que además poseen el genotipo BY; aunque únicamente se evaluó el comportamiento de 5,000 sondas escogidas al azar, resultados similares se reportaron en el estudio realizado por Llamas _et al._ (2009), por lo que se concluye que sí existe una interacción entre el genotipo el tratamiento. 
 
 **Literatura citada**
 
