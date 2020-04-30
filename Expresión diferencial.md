@@ -15,7 +15,7 @@ Evaluar el efecto de la variación genética en el cromosoma Y del ratón sobre 
 ### Materiales y métodos
 
 * Diseño experimental:
-Se ensayaron ocho ratones machos adultos de dos cepas, C57BL/6J y C57BL/6J-chrY<A/J/NaJ>, denominadas B y BY, respectivamente. De cada cepa (genotipo), cuatro animales fueron castrados y cuatro fueron intervenidos con el mismo procedimiento quirúrjuico, excepto que no se realizó la castración (animales intactos usados como control). El ARN se hibridizó a BeadChips Illumina MouseRef-8 v2.0 que contienen ocho microarreglos con 25,697 sondas cada uno. Solo se seleccionaron aleatoriamente 5,000 sondas para este tutorial (ver cómo se realizó más abajo). Para saber más sobre el diseño experimental consultar a Verdugo et al., 2009. 
+Se ensayaron ocho ratones machos adultos de dos cepas, C57BL/6J y C57BL/6J-chrY<A/J/NaJ>, denominadas B y BY, respectivamente. De cada cepa (genotipo), cuatro animales fueron castrados y cuatro fueron intervenidos con el mismo procedimiento quirúrjuico, excepto que no se realizó la castración (animales intactos usados como control). El ARN se hibridizó a BeadChips Illumina MouseRef-8 v2.0 que contienen ocho microarreglos con 25,697 sondas cada uno. Solo se seleccionaron aleatoriamente 5,000 sondas para este tutorial (ver cómo se realizó más abajo). Para saber más sobre el diseño experimental consultar a Verdugo _et al._ (2009). 
 
 * Análisis bioinformático:
 Para realizar el análisis de los datos se descargaron el conjunto de datos completo disponible en la base de datos GEO por ID GSE15354 en http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE15354. 
@@ -370,14 +370,14 @@ En la **Figura 4** muestra la distribución de _p_ tabulares y los valores de _p
  **Fig. 4.** Densidad de la distribución de los valores de *p*. Ptab: tabular, Pvalperm: permutación, F1: prueba de *F* convencional, Fs: prueba de *F* con contracción de la varianza usando información de múltiples sondas. 
 
 
-Se encontró que la expresión de interacción de genes fue diferente en cuanto al tratamiento de la castración en los dos genotipo; hubo una mayor cantidad de genes expresados diferencialmente en cuanto al genotipo, seguido por el tratamiento, y hubo una cantidad menor cuando hubo una interacción de ambos (Fig. 5).
+Se encontró que la expresión de interacción de genes fue diferente en cuanto al tratamiento de la castración en los dos genotipo; hubo una mayor cantidad de genes expresados diferencialmente en cuanto al genotipo, seguido por el tratamiento, y hubo una cantidad menor cuando hubo una interacción de ambos (**Fig. 5**).
 
 ![vennDiagram_DiffExprs](vennDiagram_DiffExprs.png)
 
 **Fig. 5.** Genes DE por efectos marginales y de interacción. 
 
 
-Se obtuvieron 39 genes de expresión diferencial solo en ratones I, 18 genes de DE con ambos tratamientos (I y C), y 15 genes DE en los ratones castrados (C)(Fig.6, izquierda); mientras que se obtuvieron 46 genes DE en ratones con el genotipo C57BL/6J (B), 22 en la interacción C57BL/6J y C57BL/6J-chrY<A/J/NaJ> (B y BY), y 133 en lo ratones con genotipo C57BL/6J-chrY<A/J/NaJ> (BY) (Fig. 6, derecha).
+Se obtuvieron 39 genes de expresión diferencial solo en ratones I, 18 genes de DE con ambos tratamientos (I y C), y 15 genes DE en los ratones castrados (C)(**Fig.6**, izquierda); mientras que se obtuvieron 46 genes DE en ratones con el genotipo C57BL/6J (B), 22 en la interacción C57BL/6J y C57BL/6J-chrY<A/J/NaJ> (B y BY), y 133 en lo ratones con genotipo C57BL/6J-chrY<A/J/NaJ> (BY) (**Fig. 6**, derecha).
 
 ![vennDiagram_Int](vennDiagram_Int.png)
 **Fig. 6.** Genes DE por efectos de interacción, divididos por tratamiento (izquierda) y genotipo (derecha). 
@@ -385,4 +385,13 @@ Se obtuvieron 39 genes de expresión diferencial solo en ratones I, 18 genes de 
 
 ### Discusión y Conclusiones 
 
-En este trabajo se observó que hubo difrencias en la expresión diferencial entre los ratones evaluados con distintos genotipos, así como distintos tratamientos. El número de genes DE fue mayor en ratones con el genotipo GY. Este mismo patrón se observó en ratones que fueron castrados. El número de genes DE fue mayor en ratones castrados y que además poseen el genotipo BY, por lo que se concluye que sí existe una interacción entre el genotipo el tratamiento. 
+En este trabajo se observó que hubo difrencias en la expresión diferencial entre los ratones evaluados con distintos genotipos, así como distintos tratamientos. El número de genes DE fue mayor en ratones con el genotipo GY. Este mismo patrón se observó en ratones que fueron castrados. El número de genes DE fue mayor en ratones castrados y que además poseen el genotipo BY; aunque únicamente se evaluó el comportamiento de 5,000 sondas escogidas al azar, resultados similares se reportaron en el estudio realizado por Llamas _et al._ (20099 , por lo que se concluye que sí existe una interacción entre el genotipo el tratamiento. 
+
+**Literatura citada**
+
+* Llamas, B., R.A. Verdugo, G.A.Churchill y C.F. Deschepper. 2009. Chromosome Y variants from different inbred mouse strains are
+linked to differences in the morphologic and molecular responses of cardiac cells to postpubertal testosterone. BMC Genomics, 10:150. doi:10.1186/1471-2164-10-150
+* Rabinovich, G.A. 2004. Inmunopatología molecular: nuevas fronteras de la medicina; un nexo entre la investigación biomédica y la práctica clínica. 1ª edición. Buenos Aires. Médica Panamericana. 640 p. 
+* Verdugo, R.A., C.F. Deschepper, G. Muñoz, D. Pompa y G.A. Churchill. 2009. Importance of randomization in microarray experimental designs with Illumina platforms. Nucleic Acids Research, 37:5610-5618.
+
+
