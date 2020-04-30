@@ -351,7 +351,7 @@ GO.ID                                        Term Annotated Significant Expected
 
 ![Pairs_scatter_log2](Pairs_scatter_log2.png)
 
-![P-values Hist](P-values Hist.png)
+![P-values_Hist](P-values_Hist.png)
 
 ![vennDiagram_DiffExprs](vennDiagram_DiffExprs.png)
 
