@@ -350,6 +350,7 @@ GO.ID                                        Term Annotated Significant Expected
 
 
 ![boxplot_random_treatment](boxplot_random_treatment.png)
+ 
  **Fig. 2.** Diagramas de caja de 5,000 datos aleatorizados por microarreglo. Las cajas están coloreadas según tratamiento. 
 
 ![Pairs_scatter_log2](Pairs_scatter_log2.png)
@@ -360,7 +361,8 @@ GO.ID                                        Term Annotated Significant Expected
 
 
 ![vennDiagram_DiffExprs](vennDiagram_DiffExprs.png)
- **Fig. 5.** Genes DE por efectos marginales y de interacción. 
+
+**Fig. 5.** Genes DE por efectos marginales y de interacción. 
 
 ![vennDiagram_Int](vennDiagram_Int.png)
 **Fig. 6.** Genes DE por efectos de interacción, divididos por tratamiento (izquierda) y genotipo (derecha) . 
