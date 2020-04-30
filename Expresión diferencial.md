@@ -64,12 +64,10 @@ annot     <- read.delim("C:/BIOINFORMATICA/DE_turotial2/MouseRef-8_annot_full.tx
 random_names <- rownames(random_data)
 annot = annot[row.names(annot)%in%random_names,]
 ```
-*No todas las sondas muestran la misma calidad al ser alineadas contra el genoma de referencia.*
+* Anotar la calidad de las sondas al ser alineadas contra el genoma de referencia.
 ```R
 table(annot$ProbeQuality)
-  Bad        Good     Good***    Good****    No match     Perfect  Perfect*** Perfect**** 
-        285          97           2          28           0        4426          50         112 
-```
+ ```
 
 * Leer la tabla con el diseño de las hibridaciones. 
 ```R
@@ -344,10 +342,19 @@ GO.ID                                        Term Annotated Significant Expected
 
 ### Resultados
 
+Una vez que las sondas se alinearon contra el genoma de referencia, se obtuvieron un total de 4715 sondas de buena calidad, es decir, que estaban en la categoría de _Good_ o _Perfect_, y 285 sondas de mala calidad (categoría _Bad_) (Tabla 1).
+```R
+Tabla 1. Calidad de las 5,000 sondas elegidas aleatoriamente.
+Bad        Good     Good***    Good****    No match     Perfect  Perfect*** Perfect**** 
+        285          97           2          28           0        4426          50         112
+```
+
+Lo anterior se v reflejado en la **Figura 1** que muestra un gráfico de cajas que refleja el control de calidad de las sondas, tomando en cuenta el lograritmo base 2 de la intensidad para cada muestra; en este gráfico las sondas se dividen por anotación, es decir, se grafican las sondas de mala (en color rojo) y buena calidad (color verde). La calidad de cada sonda se obtiene cuando se mapean contra el genoma de referencia. La calidad de cada sonda se obtiene cuando se mapean contra el genoma. Los tamaños de las cajas son de tamaño similar, lo que refleja que las sondas son de buena calidad. 
 
 ![boxplot_random_probe_qc](boxplot_random_probe_qc.png)
- **Fig. 1.** Diagramas de caja de 5,000 datos aleatorizados en escala log por microarreglo y calidad de sonda. El ancho de las cajas es proporcional al número de sondas.
+ **Fig. 1.** Diagramas de caja de 5,000 sondas aleatorizadas en escala log por microarreglo y calidad de sonda. El ancho de las cajas es proporcional al número de sondas.
 
+En la **Figura 2** se muestran únicamente las sondas de buena calidad, coloreadas por tratamiento, castrado (E) intacto (I).
 
 ![boxplot_random_treatment](boxplot_random_treatment.png)
  
