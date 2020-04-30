@@ -341,18 +341,24 @@ GO.ID                                        Term Annotated Significant Expected
  write.table(GO_BP_Table, file.path(outdir, "GO_BP_Table.csv"), sep=",", 
   row.names=F)
 ```
-###### Fin del tutorial
 
 ### Resultados
 
+
 ![boxplot_random_probe_qc](boxplot_random_probe_qc.png)
+ **Fig. 1.** Diagramas de caja de 5,000 datos aleatorizados en escala log por microarreglo y calidad de sonda. El ancho de las cajas es proporcional al número de sondas.
 
 ![boxplot_random_treatment](boxplot_random_treatment.png)
+ **Fig. 2.** Diagramas de caja de 5,000 datos aleatorizados por microarreglo. Las cajas están coloreadas según tratamiento. 
 
 ![Pairs_scatter_log2](Pairs_scatter_log2.png)
+ **Fig. 3.** Diagramas de dispersión de 5,000 datos aleatorizados en escala log2.
 
 ![P-values_Hist](P-values_Hist.png)
+ **Fig. 4.** Densidad de la distribución de los valores de *p*. Ptab: tabular, Pvalperm: permutación, F1: prueba de *F* convencional, Fs: prueba de *F* con contracción de la varianza usando información de múltiples sondas. 
 
 ![vennDiagram_DiffExprs](vennDiagram_DiffExprs.png)
+ **Fig. 5.** Genes DE por efectos marginales y de interacción. 
 
 ![vennDiagram_Int](vennDiagram_Int.png)
+**Fig. 6.** Genes DE por efectos de interacción, divididos por tratamiento (izquierda) y genotipo (derecha) . 
